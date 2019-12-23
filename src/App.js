@@ -21,32 +21,15 @@ const list = [
 
 class App extends Component {
   state = {
-    list,
-    i: false
+   
   };
 
-  onDismiss = (l) => {
-
-    this.state.i = true;
-    console.log(l);  
-  };
 
   render() {
     return (
       <div>
-        <h1>He;llo world</h1>
-        <span>
-          <button onClick={() => this.onDismiss(this.state.i)} type="button">
-            Dismiss
-          </button>
-          {this.state.i ? (
-            <ul>
-              {this.state.list.map(i => (
-                <li>{i.author}</li>
-              ))}
-            </ul>
-          ) : null}
-        </span>
+        <h1>Hello world</h1>
+        
       </div>
     );
   }
